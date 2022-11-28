@@ -17,13 +17,14 @@ public class playerMovement : MonoBehaviour
     public AudioClip JumpAudio;
     private AudioSource audio;
 
-    public int NextScene = 3;
+    public int NextScene;
 
     void Start() //เริ่มต้นในการทำงาน
     {
         audio = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>(); // เรียกใช้ Rigidbody
         isGround = false;
+        NextScene = 3;
     }
 
     // Update is called once per frame
